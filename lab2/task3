@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class task3 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("enter a number");
+        int num = scan.nextInt();
+
+        if (num % 2 == 0 && num % 7 == 0){
+            System.out.println("divisble by both 2 and 7");
+        }else if(num %2 == 0 || num % 7 == 0){
+            System.out.println("divisible by only one of them");
+        }else{
+            System.out.println("divisible by neither");
+        }
+        scan.close();
+    }
+}
