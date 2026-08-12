@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class task1{
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int tot = 0;
+        double avg = 0.0;
+
+       for (int i =1; i<= 4; i++){
+        System.out.println("enter marks: ");
+        int mark = scan.nextInt();
+        
+        if (mark >= 80){
+            System.out.println("grade = A");
+        }else if (mark>=65){
+            System.out.println("grade = B");
+        }else if (mark >= 50){
+            System.out.println("grade = C");
+        }else{
+            System.out.println("grade = F");
+        }
+
+        tot = tot + mark;
+       }
+
+    System.out.println("total is " + tot);
+    avg = tot/4;
+    System.out.println("average is " + avg);
+        
+    scan.close();
+    }
+}
