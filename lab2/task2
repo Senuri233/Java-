@@ -1,0 +1,9 @@
+public class UnaryOperators {
+    public static void main (String[] args){
+        int x = 5;
+        int y = ++x + x++ + --x + x--;
+        System.out.println("x = " + x + ", y = " + y);
+    }
+}
+
+//initially, ++x means 6. the value of x after used is 6. then to that 6 is added. (6+6) then x is incremented so that x is 7. then x is decremented before using so its (6+6+6).so x is now 6. then finally x is added to 6+6+6. so the answer is 24. final value of x is 5.
