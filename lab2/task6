@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class task6 {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("enter number of electricity units consumed: ");
+        int units = scan.nextInt();
+        double bill = 0.0;
+
+        if (units <= 100){
+            bill = units*10;
+        }else if(units>100 && units<=200){
+            bill = 100*10 + (units-100)*15;
+        }else{
+            bill =100*10 + 100*15 + (units-200)*20;
+        }
+        scan.close();
+
+        System.out.println("bill is " + bill);
+    }
+}
